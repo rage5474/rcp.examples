@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example
+Bundle-SymbolicName: my.osgi.ds.example
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/my.osgi.ds.example.helloservice.impl.HelloWorldServiceImpl.xml,
+ OSGI-INF/my.osgi.ds.example.helloclient.impl.HelloWorldClientImpl.xml
+Bundle-ActivationPolicy: lazy
+Import-Package: org.osgi.service.component;version="1.2.2",
+ org.osgi.service.component.annotations;version="1.2.0"
